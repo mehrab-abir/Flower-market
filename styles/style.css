@@ -203,7 +203,6 @@ header .container nav ul li a:hover{
     animation-name: badge;
     animation-iteration-count: infinite;
     animation-duration: 5s;
-    animation-direction: normal;
 }
 
 @keyframes badge{
