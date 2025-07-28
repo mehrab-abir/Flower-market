@@ -214,3 +214,87 @@ header .container nav ul li a:hover{
         margin-left: 20px;
     }
 }
+
+/* Latest deals */
+#latest-deals{
+    margin: 100px 0px;
+}
+#latest-deals .container{
+    text-align: center;
+}
+#latest-deals .container .deals-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 40px;
+    color: #8987A1;
+}
+#latest-deals .container .deals-content p{
+    width: 60%;
+}
+#latest-deals .container .deals-content h1{
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.deals-img {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 100%;
+}
+
+.single-img {
+  position: relative;
+}
+
+.single-img img {
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.6);
+  border-radius: 15px;
+}
+
+.single-img .img-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  z-index: 1;
+  width: 100%;
+}
+.single-img:nth-child(2) {
+  grid-row: span 2;
+  height: 100%;
+}
+.single-img h3{
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+.single-img p{
+    text-decoration: underline;
+}
+.single-img .big h3{
+    font-size: 2rem;
+}
+
+@media screen and (max-width:576px){
+    #latest-deals .container .deals-content p{
+        width: 100%;
+    }
+    .deals-img{
+        display: flex;
+        flex-direction: column;
+    }
+    .single-img .big h3{
+        font-size: 1rem;
+    }
+    .deals-img .zabo{
+        order: 3;
+    }
+}
