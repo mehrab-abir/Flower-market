@@ -305,7 +305,6 @@ header .container nav ul li a:hover{
   color: white;
   text-align: center;
   font-weight: bold;
-  z-index: 1;
   width: 100%;
 }
 .single-img:nth-child(2) {
