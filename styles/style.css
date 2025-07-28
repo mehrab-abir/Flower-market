@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+.noto-serif-font {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+header{
+    margin-top: 20px;
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+}
+header .container nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .container nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .container nav ul li{
+    list-style-type: none;
+    margin-left:40px;
+}
+header .container nav ul li a{
+    text-decoration: none;
+    color: #8987A1;
+    font-size: 0.9rem;
+}
+header .container nav ul li:first-child a{
+    color: black;
+}
+header .container nav ul li a:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width:576px){
+    header .container nav ul{
+        display: none;
+    }
+}
+
+.banner-content{
+    grid-area: banner-content;
+    width: 80%;
+    color: #8987A1;
+}
+.text-orange{
+    color: #E95A08;
+}
+.banner-img{
+    grid-area: banner-img;
+}
+.banner-img img{
+    max-width: 100%;
+}
+.banner{
+    margin-top: 130px;
+    display: grid;
+    grid-template-areas: "banner-content banner-img";
+    align-items: center;
+}
+.banner .banner-content h1{
+    color: black;
+    margin-bottom: 15px;
+    font-size: 2.5rem;
+}
+
+@media screen and (max-width:576px){
+    header .container{
+        width: 95%;
+    }
+    header .container .logo{
+        margin-left: 10px;
+    }
+    .banner{
+        grid-template-areas: 
+        "banner-img"
+        "banner-content";
+    }
+    .banner-content{
+        margin-top: 50px;
+        width: 100%;
+        margin-left: 10px;
+    }
+    .banner-img img{
+        transform: translateX(10px)
+    }
+}
+
+/* Our plants css */
+#our-plants .container{
+    text-align: center;
+    margin-top: 100px;
+}
+#our-plants .container .our-plants-headline{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+#our-plants .container h1{
+    font-size: 2.3rem;
+}
+#our-plants .container .our-plants-text{
+    width: 60%;
+    color: #8987A1;
+}
+
+#our-plants .container .plant-cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+#our-plants .container .plant-cards .single-card{
+    text-align: center;
+    transform: scale(0.9);
+    margin-top: -30px;
+}
+.plant-cards .single-card h5{
+    font-size: 1.2rem;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+.plant-cards .single-card p{
+    font-weight: bold;
+}
+.btn-primary{
+    width: 100%;
+    background-color: #E95A08;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+}
