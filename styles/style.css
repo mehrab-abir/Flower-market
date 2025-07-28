@@ -134,6 +134,9 @@ header .container nav ul li a:hover{
     transform: scale(0.9);
     margin-top: -30px;
 }
+#our-plants .container .plant-cards .single-card img{
+    max-width: 100%;
+}
 .plant-cards .single-card h5{
     font-size: 1.2rem;
     margin-top: 15px;
@@ -151,4 +154,63 @@ header .container nav ul li a:hover{
     padding: 15px;
     margin-top: 20px;
     cursor: pointer;
+}
+
+@media screen and (max-width:576px){
+    #our-plants .container{
+        width: 90%;
+    }
+    #our-plants .container .our-plants-text{
+        width: 100%;
+    }
+    #our-plants .container .plant-cards{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* flower and plants lover css */
+#flower-and-plants{
+    margin: 100px 0px;
+}
+#flower-and-plants .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+}
+#flower-and-plants .container .flower-store-img img{
+    max-width: 100%;
+}
+#flower-and-plants .container .flower-and-plants-content{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(50px);
+}
+#flower-and-plants .container .flower-and-plants-content h1{
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+#flower-and-plants .container .flower-and-plants-content ul li{
+    color: #8987A1;
+    margin-top: 15px;
+}
+
+@media screen and (max-width:576px){
+    #flower-and-plants .container{
+        grid-template-columns: 1fr;
+        gap: 10px;
+        width: 90%;
+    }
+    #flower-and-plants .container .flower-and-plants-content{
+        transform: translateY(0px);
+        width: 100%;
+        align-items: flex-start;
+    }
+    #flower-and-plants .container .flower-and-plants-content h1{
+        font-size: 2rem;
+    }
+    #flower-and-plants .container .flower-and-plants-content ul{
+        margin-left: 20px;
+    }
 }
